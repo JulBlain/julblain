@@ -1,5 +1,39 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "nav.scss";
 
-h1 {
+/*color*/
+$primary : #2a64f8;
+$firstBorder : $primary solid 10px ;
+/*general*/
+
+body {
+  border-left: $firstBorder;
+  border-right: $firstBorder;
+}
+
+footer {
+  border-bottom: $firstBorder;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 
 }
+
+header {
+  border-top: $firstBorder;
+  position: fixed;
+  top: 0;
+}
+
+
+section {
+  min-height: 100vh;
+
+}
+
+
+img {
+  width: 100%;
+  height: auto;
+}
+

@@ -17,6 +17,7 @@ class HomeController extends AbstractController
      * @return Response
      */
     public function home(): Response {
+
         return new Response($this->renderView('pages/home.html.twig'));
     }
 }
