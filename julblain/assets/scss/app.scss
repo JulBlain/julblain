@@ -1,14 +1,21 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
-@import "nav.scss";
+@import "nav";
+@import "home";
 
 /*color*/
 $primary : #2a64f8;
 $firstBorder : $primary solid 10px ;
-/*general*/
+$backgroundColor: #ffff;
 
+/*height*/
+$heightHeader : 12vh;
+$heightFooter : 6vh;
+
+
+/*general*/
+$colorArrow : #fe18d5;
 body {
-  border-left: $firstBorder;
-  border-right: $firstBorder;
+  border: $firstBorder;
 }
 
 footer {
@@ -19,15 +26,25 @@ footer {
 
 }
 
-header {
+#headerWidth {
   border-top: $firstBorder;
+  border-right: $firstBorder;
   position: fixed;
   top: 0;
+ z-index: 10;
+  background-color: $backgroundColor;
+  width: auto;
+
+  .row {
+    justify-content: space-around;
+  }
 }
+
 
 
 section {
   min-height: 100vh;
+  z-index: 0;
 
 }
 
@@ -37,3 +54,40 @@ img {
   height: auto;
 }
 
+
+/** home **/
+#arrowHello {
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+  flex-direction: column;
+
+
+  .arrowTxt {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    margin: 0;
+    padding-top: 30vh;
+
+    font-family: 'Teko', sans-serif;
+    font-size: 1.2rem;
+    color: $colorArrow;
+    align-self: center;
+
+  }
+
+
+  .arrowImg {
+    align-self: center;
+    width: 10px;
+
+  }
+
+
+}
+
+
+
+#homePresentaion {
+  background-color: red;
+}
