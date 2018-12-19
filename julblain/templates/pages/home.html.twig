@@ -1,5 +1,8 @@
 {% extends 'base.html.twig' %}
-{% block title %}Accueil - Jul Blain{% endblock %}
+{% block title %}Jul Blain - Accueil {% endblock %}
+{% block stylesheets %}
+
+{% endblock %}
 {% block body %}
 
     <section id="home">
@@ -12,8 +15,23 @@
                     <img src="{{ asset('img/arrowPink.jpg') }}" alt="flèche directionnelle descendante" class="arrowImg">
                 </div>
 
-                <canvas id="homeCanvas" class="col-10">
-                </canvas>
+                <canvas id="homeCanvas" class="col-11"></canvas>
+                <div class="col-10 containerTxtHome">
+                    <div id="homeHello">
+                        <span class="helloWord">Hello</span>
+                        <span class="helloWord">Hello</span>
+                        <span class="helloWord">Hello...</span>
+                        <span class="helloWord">Word !</span>
+                    </div>
+
+                    <div id="homeBtn" >
+                        <p>btn</p>
+                    </div>
+
+
+
+
+                </div>
 
             </div>
         </div>
@@ -23,4 +41,8 @@
     <section>
         <h2>truc</h2>
     </section>
+{% endblock %}
+{% block javascripts %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="http://127.0.0.1:8000/js/home/hello.js"></script>
 {% endblock %}

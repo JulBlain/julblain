@@ -154,12 +154,7 @@ var draw = {
         draw.context.fill();
         draw.t2 = draw.t2 + 0.001;
 
-    }
-
-
-
-
-
+    },
 
 };
 

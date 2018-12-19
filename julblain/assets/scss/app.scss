@@ -87,13 +87,41 @@ img {
 
 }
 #homeCanvas {
-
+  position: absolute;
   margin-top: $heightHeader;
   margin-bottom: $heightFooter;
   height: 99vh - ($heightFooter + $heightHeader);
   width: 100%;
   z-index: $canvasZi;
-  //border: 1px solid black;
-  padding: 0;
-  top: 0;
+
+
+
 }
+
+.containerTxtHome {
+
+  margin-top: $heightHeader + 2vh;
+  margin-bottom: $heightFooter;
+  height: 96vh - ($heightFooter + $heightHeader);
+  width: 100%;
+  z-index: $containerTxtHome;
+  padding-left: 0;
+
+}
+
+/*hello*/
+#homeHello {
+  font-weight: 800;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+
+}
+
+.helloWord {
+  color: $black;
+  display: inline-block;
+  line-height: 1em;
+}
+
+/*Jul*/
