@@ -37,7 +37,7 @@ var draw = {
 
     calcVertices : function () {
         var homeFirstLineX = Math.round(this.canvas.width / 3);
-        var homeFirstLineY = Math.round(this.canvas.height /3);
+        var homeFirstLineY = Math.round(this.canvas.height / 4);
 
 
 

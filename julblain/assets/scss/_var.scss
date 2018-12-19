@@ -1,22 +1,18 @@
 /*color*/
-$primary : #2a64f8;
-$widthFirstBorder : 10px;
-$firstBorder : $primary solid $widthFirstBorder ;
-$backgroundColor: #ffff;
+$blue : #2a64f8;
 $black :  #262626;
-
-/*height*/
-$heightHeader : 12vh;
-$heightFooter : 6vh;
-
-/*z-index*/
-$headerZi : 10;
-$footerZi : 9;
-$sectionZi : 0;
-$canvasZi : 1;
-$containerTxtHome : 2;
-
-
+$pink : #fe18d5;
 
 /*general*/
-$colorArrow : #fe18d5;
+$wBorderScreen : 10px;
+$borderScreen : $blue solid $wBorderScreen;
+
+
+/*z-index*/
+$ziBorderScreen : -10;
+$ziFooter : 10;
+$ziHeader : 11;
+$ziCanvas : -9;
+
+/*header*/
+$heightHeader : 60px;

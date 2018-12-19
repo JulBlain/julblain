@@ -12,7 +12,7 @@ nav {
 .toggle {
   position:absolute;
   top:55%; //annulation de 50% pour iphone4 portrait
-  /*left:50%;*/
+  left:50%;
   right: -14px; //annulation de la valeur bootstrap
   transform:translate(-50%,-50%);
   width:50px;
@@ -57,4 +57,28 @@ nav {
 .toggle.active span:before {
   top:50%;
   transition-delay:1s;
+}
+
+
+/*header*/
+#header {
+  z-index: $ziHeader;
+  position: fixed;
+  height: $heightHeader;
+  border-top: $borderScreen;
+  border-right: $borderScreen;
+  border-left: $borderScreen;
+  background-color: #FFFFFF;
+  padding: 5px 0 0 0;
+}
+
+#header img {
+  height: 40px;
+  width: auto;
+}
+
+#header .col-6 {
+  display: flex;
+  justify-content: center;
+
 }

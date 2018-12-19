@@ -1,116 +1,119 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "var";
 @import "nav";
-@import "home";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+}
+//reset bootstrap sur mobil
+.row {
+  margin-right: 0;
+  margin-left: 0;
+
+}
+.container-fluid, div[class^=col-] {
+  padding-right: 0;
+  padding-left: 0;
+}
 
 
 body {
-  border: $firstBorder;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+
 }
+
+#borderScreen {
+  position: fixed ;
+  height: 100vh;
+  border : $borderScreen;
+  z-index: $ziBorderScreen;
+}
+
 
 footer {
-  border-bottom: $firstBorder;
   position: fixed;
   bottom: 0;
+  border-bottom: $borderScreen;
+  z-index: $ziFooter;
   width: 100%;
-  z-index: $footerZi;
-  height: $heightFooter;
-  background-color: #0b2e13;
+}
+
+#main {
+  padding: 0 $wBorderScreen; //bootstrap 15
+ // margin-top: $heightHeader;
 
 }
 
-#headerWidth {
-  border-top: $firstBorder;
-  border-right: $firstBorder;
-  position: fixed;
-  top: 0;
- z-index: $headerZi;
-  background-color: $backgroundColor;
-  width: auto;
+#testFixed {
+  margin-top: 100vh;
+  height: 50vh;
 
-  .row {
-    justify-content: space-around;
-  }
+  background-color: red;
+}
+#testFixed2 {
+  margin-top: 20vh;
+  height: 50vh;
+
+  background-color: blue;
 }
 
-
-
+/*home*/
 section {
-  min-height: 100vh;
-  z-index: $sectionZi;
+  height: 100vh;
+  padding-top: $heightHeader;
+  padding-bottom: $wBorderScreen;
+}
+
+#home {
 
 }
 
-
-img {
-  width: 100%;
-  height: auto;
+#homeTest  {
+  background-color: green;
 }
 
-
-/** home **/
 #arrowHello {
   display: flex;
-  justify-content: space-around;
-  height: 100vh;
   flex-direction: column;
-
+  justify-content: flex-end;
+  padding-bottom: $wBorderScreen;
 
   .arrowTxt {
     writing-mode: vertical-lr;
     text-orientation: mixed;
-    margin: 0;
-    padding-top: 30vh;
-
     font-family: 'Teko', sans-serif;
     font-size: 1.2rem;
-    color: $colorArrow;
+    color: $pink;
     align-self: center;
 
-  }
+    text-align: end;
 
+  }
 
   .arrowImg {
     align-self: center;
     width: 10px;
-
   }
-
-
 }
 
-
-
-.homeContainer {
-
-
-
-}
 #homeCanvas {
   position: absolute;
-  margin-top: $heightHeader;
-  margin-bottom: $heightFooter;
-  height: 99vh - ($heightFooter + $heightHeader);
-  width: 100%;
-  z-index: $canvasZi;
-
-
-
-}
-
-.containerTxtHome {
-
-  margin-top: $heightHeader + 2vh;
-  margin-bottom: $heightFooter;
-  height: 96vh - ($heightFooter + $heightHeader);
-  width: 100%;
-  z-index: $containerTxtHome;
-  padding-left: 0;
-
+  padding: $wBorderScreen;
+  z-index: $ziCanvas;
 }
 
 /*hello*/
-#homeHello {
+
+
+
+#helloWordBox {
+  padding: (2 * $wBorderScreen) $wBorderScreen;
   font-weight: 800;
   font-size: 1em;
   text-transform: uppercase;
@@ -124,4 +127,3 @@ img {
   line-height: 1em;
 }
 
-/*Jul*/
