@@ -2,6 +2,13 @@
 $blue : #2a64f8;
 $black :  #262626;
 $pink : #fe18d5;
+$yellow : #ffc000;
+
+/*font*/
+$poiret : 'Poiret One', cursive;
+$zcool : 'ZCOOL KuaiLe', cursive;
+$teko : 'Teko', sans-serif;
+
 
 /*general*/
 $wBorderScreen : 10px;
@@ -10,9 +17,12 @@ $borderScreen : $blue solid $wBorderScreen;
 
 /*z-index*/
 $ziBorderScreen : -10;
-$ziFooter : 10;
-$ziHeader : 11;
+$ziFooter : 49;
+$ziHeader : 50;
 $ziCanvas : -9;
+$ziBtnHappy: 20;
+$ziBtnHappyBtn : 21;
+$ziBtnHappyTxt : 22;
 
 /*header*/
 $heightHeader : 60px;

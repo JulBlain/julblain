@@ -70,13 +70,6 @@ section {
   padding-bottom: $wBorderScreen;
 }
 
-#home {
-
-}
-
-#homeTest  {
-  background-color: green;
-}
 
 #arrowHello {
   display: flex;
@@ -87,12 +80,13 @@ section {
   .arrowTxt {
     writing-mode: vertical-lr;
     text-orientation: mixed;
-    font-family: 'Teko', sans-serif;
+    font-family: $teko;
     font-size: 1.2rem;
     color: $pink;
     align-self: center;
 
     text-align: end;
+    padding-bottom: 5vh;
 
   }
 
@@ -102,6 +96,12 @@ section {
   }
 }
 
+#homePresentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 #homeCanvas {
   position: absolute;
   padding: $wBorderScreen;
@@ -109,16 +109,15 @@ section {
 }
 
 /*hello*/
-
-
-
 #helloWordBox {
-  padding: (2 * $wBorderScreen) $wBorderScreen;
+  padding:  (4*$wBorderScreen) $wBorderScreen (2*$wBorderScreen) $wBorderScreen;
+
   font-weight: 800;
   font-size: 1em;
   text-transform: uppercase;
   letter-spacing: 0.5em;
 
+  font-family: $zcool;
 }
 
 .helloWord {
@@ -127,3 +126,83 @@ section {
   line-height: 1em;
 }
 
+/*Jul Blain*/
+#homeTitle {
+  position: relative;
+  font-weight: 200;
+  font-size: 1.5rem;
+  font-family: $poiret;
+  padding: (5*$wBorderScreen) $wBorderScreen;
+}
+
+#myName {
+  color: #ffc000;;
+  font-size: 2.2rem;
+
+}
+#homeTitle .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+#homeTitle .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+
+/*btnHappy*/
+
+#warped {
+
+ // -webkit-animation: rotation 2s infinite linear;
+}
+
+#btnHappy {
+  position: absolute;
+  z-index: $ziBtnHappy;
+  top: 40vh ;
+  right: 25vw;
+  display: flex;
+
+
+}
+#btnHappyTxt {
+  font-weight: 600;
+
+  font-family: $teko;
+ color:  $pink;
+margin: auto;
+  font-size: 15px;
+
+  animation:   5s linear 0s infinite rotation;
+
+   > div {
+     display: flex;
+   }
+
+
+}
+
+#btnHappyCircle {
+  //position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: $yellow;
+  margin: auto;
+  border-radius: 50%;
+
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+  }
+}

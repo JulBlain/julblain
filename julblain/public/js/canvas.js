@@ -36,8 +36,8 @@ var draw = {
 
 
     calcVertices : function () {
-        var homeFirstLineX = Math.round(this.canvas.width / 3);
-        var homeFirstLineY = Math.round(this.canvas.height / 4);
+        var homeFirstLineX = Math.round(this.canvas.width / 2);
+        var homeFirstLineY = Math.round(this.canvas.height / 5);
 
 
 
@@ -95,9 +95,9 @@ var draw = {
             var pt1 = this.vertices[i];
             var dx = pt1.x - pt0.x;
             var dy = pt1.y - pt0.y;
-            for (var j = 0; j < 60; j++) {
-                var x = pt0.x + dx * j / 60;
-                var y = pt0.y + dy * j / 60;
+            for (var j = 0; j < 50; j++) {
+                var x = pt0.x + dx * j / 50;
+                var y = pt0.y + dy * j / 50;
                 this.waypoints.push({
                     x: x,
                     y: y
@@ -152,7 +152,7 @@ var draw = {
         var opacity = draw.t2 ;
         draw.context.fillStyle = "rgba(123, 220, 214, "+ opacity + ")" ;
         draw.context.fill();
-        draw.t2 = draw.t2 + 0.001;
+        draw.t2 = draw.t2 + 0.01;
 
     },
 

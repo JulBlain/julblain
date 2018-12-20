@@ -2,8 +2,8 @@
 {% block title %}Jul Blain - Accueil {% endblock %}
 
 {% block body %}
-
     <section class="w-100" id="home">
+
         <div class="container-fluid h-100 ">
             <div class="row h-100 w-100 ">
                 <div class="col-1 h100" id="arrowHello">
@@ -11,38 +11,50 @@
                     <img src="{{ asset('img/arrowPink.jpg') }}" alt="flèche directionnelle descendante" class="arrowImg">
                 </div>
 
-                <div class="col-11 h-100" id="truc" >
-
+                <div class="col-11 h-100" id="homePresentation">
                     <canvas id="homeCanvas" class="w-100 h-100"></canvas>
 
-                    <div id="helloWordBox" class="w-50">
-                        <span class="helloWord">Hello</span>
-                        <span class="helloWord">Hello</span>
-                        <span class="helloWord">Hello...</span>
-                        <br>
-                        <span class="helloWord">Word !</span>
+                    <div id="helloWordBox" class="w-75 ">
+                        <span class="helloWord invisibleH">Hello</span><br>
+                        <span class="helloWord invisibleH">Hello</span> <br>
+                        <span class="helloWord invisibleH">Hello</span><br>
+                        <span class="helloWord invisibleH">World!</span>
                     </div>
-                </div>
 
+                    <h1 id="homeTitle">
+                      <span class="text-wrapper">
+                        <span class="letters " id="myName">Jul Blain</span> <br>
+                        <span class="letters ">Développeur Web</span>
+                      </span>
+                    </h1>
+                </div>
             </div>
         </div>
+
+
+        <div id="btnHappy">
+
+                <div id="btnHappyTxt" > BOUTON de bonne humeur. . .</div>
+
+            <!-- <div id="btnHappyCircle"></div> -->
     </section>
 
+<section class="w-100" id="homeTest" style="background-color: red;">
+
+    </div>
 
 
-
-
-    <section class="w-100" id="homeTest">
-
-    </section>
-
+</section>
 {% endblock %}
 
 {% block javascripts %}
+
     <script src="http://127.0.0.1:8000/js/canvas.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="http://127.0.0.1:8000/js/home/arctext.js"></script>
+
     <script src="http://127.0.0.1:8000/js/home/hello.js"></script>
-    <!--
+
 
 
 {% endblock %}
