@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79d8a183-9868-4f7d-8b92-362f6b6388a1" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/julblain/public/js/home/meHomeBtnCircle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/julblain/public/js/home/meHomeCanvas.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/julblain/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/julblain/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/julblain/assets/scss/_home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/julblain/assets/scss/_home.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/julblain/assets/scss/_var.scss" beforeDir="false" afterPath="$PROJECT_DIR$/julblain/assets/scss/_var.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/julblain/assets/scss/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/julblain/assets/scss/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/julblain/public/js/canvas.js" beforeDir="false" afterPath="$PROJECT_DIR$/julblain/public/js/canvas.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/julblain/public/js/home/hello.js" beforeDir="false" afterPath="$PROJECT_DIR$/julblain/public/js/home/hello.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/julblain/public/js/menuIcon.js" beforeDir="false" afterPath="$PROJECT_DIR$/julblain/public/js/menuIcon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/julblain/public/js/menuIcon.js" beforeDir="false" afterPath="$PROJECT_DIR$/julblain/public/js/events.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/julblain/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/julblain/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/julblain/templates/pages/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/julblain/templates/pages/home.html.twig" afterDir="false" />
     </list>
@@ -27,8 +29,8 @@
       <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/julblain/templates/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-147">
-              <caret line="20" column="79" selection-start-line="20" selection-start-column="79" selection-end-line="20" selection-end-column="79" />
+            <state relative-caret-position="210">
+              <caret line="37" column="30" lean-forward="true" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -36,48 +38,47 @@
       <file leaf-file-name="home.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/julblain/templates/pages/home.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="36" column="66" selection-start-line="36" selection-start-column="66" selection-end-line="36" selection-end-column="66" />
-              <folding>
-                <element signature="e#12#26#0#Twig" expanded="true" />
-                <element signature="e#1639#1669#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="469">
+              <caret line="59" column="58" selection-start-line="59" selection-start-column="58" selection-end-line="59" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/julblain/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="584">
-              <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="canvas.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/julblain/public/js/canvas.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="97" column="42" selection-start-line="97" selection-start-column="42" selection-end-line="97" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/julblain/assets/scss/app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="166" column="23" selection-start-line="166" selection-start-column="23" selection-end-line="166" selection-end-column="23" />
+            <state relative-caret-position="-119">
+              <caret line="86" column="22" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menuIcon.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/julblain/public/js/menuIcon.js">
+      <file leaf-file-name="_home.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/julblain/assets/scss/_home.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="1057">
+              <caret line="140" selection-start-line="140" selection-end-line="140" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="canvas.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/julblain/public/js/canvas.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="144" column="52" selection-start-line="144" selection-start-column="34" selection-end-line="144" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="meHomeBtnCircle.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/julblain/public/js/home/meHomeBtnCircle.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="742">
+              <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -85,24 +86,10 @@
       <file leaf-file-name="_var.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/julblain/assets/scss/_var.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+            <state relative-caret-position="147">
+              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hello.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/julblain/public/js/home/hello.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="circletype.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/julblain/public/js/home/circletype.min.js">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -127,6 +114,8 @@
       <find>ml8</find>
       <find>.ml8</find>
       <find>.ml9</find>
+      <find>draw2</find>
+      <find>draw</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -151,20 +140,27 @@
         <option value="$PROJECT_DIR$/julblain/assets/scss/nav.scss" />
         <option value="$PROJECT_DIR$/julblain/public/build/js/menuIcon.js" />
         <option value="$PROJECT_DIR$/julblain/assets/scss/home.scss" />
-        <option value="$PROJECT_DIR$/julblain/assets/scss/_home.scss" />
         <option value="$PROJECT_DIR$/julblain/assets/js/menuIcon.js" />
         <option value="$PROJECT_DIR$/julblain/assets/js/app.js" />
         <option value="$PROJECT_DIR$/julblain/assets/scss/_nav.scss" />
-        <option value="$PROJECT_DIR$/julblain/.env" />
         <option value="$PROJECT_DIR$/julblain/public/js/lettering/lettering.js" />
-        <option value="$PROJECT_DIR$/julblain/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/julblain/.gitignore" />
         <option value="$PROJECT_DIR$/julblain/public/js/menuIcon.js" />
         <option value="$PROJECT_DIR$/julblain/public/js/home/hello.js" />
-        <option value="$PROJECT_DIR$/julblain/assets/scss/_var.scss" />
-        <option value="$PROJECT_DIR$/julblain/templates/pages/home.html.twig" />
-        <option value="$PROJECT_DIR$/julblain/assets/scss/app.scss" />
+        <option value="$PROJECT_DIR$/julblain/assets/scss/_home.scss" />
+        <option value="$PROJECT_DIR$/julblain/public/js/events.js" />
         <option value="$PROJECT_DIR$/julblain/public/js/canvas.js" />
+        <option value="$PROJECT_DIR$/julblain/public/js/home/meHomeCanvas.js" />
+        <option value="$PROJECT_DIR$/julblain/public/js/home/meHomeCanvasBalls2.js" />
+        <option value="$PROJECT_DIR$/julblain/public/js/home/meHomeCanvasBalls.js" />
+        <option value="$PROJECT_DIR$/julblain/public/js/home/meHomeFriction.js" />
+        <option value="$PROJECT_DIR$/julblain/.env" />
+        <option value="$PROJECT_DIR$/julblain/public/js/home/meHomeMatter.js" />
+        <option value="$PROJECT_DIR$/julblain/public/js/home/meHomeBtnCircle.js" />
+        <option value="$PROJECT_DIR$/julblain/templates/base.html.twig" />
+        <option value="$PROJECT_DIR$/julblain/templates/pages/home.html.twig" />
+        <option value="$PROJECT_DIR$/julblain/assets/scss/_var.scss" />
+        <option value="$PROJECT_DIR$/julblain/assets/scss/app.scss" />
       </list>
     </option>
   </component>
@@ -289,8 +285,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="12" />
-    <option name="y" value="36" />
-    <option name="width" value="1349" />
+    <option name="y" value="27" />
+    <option name="width" value="1546" />
     <option name="height" value="1053" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -420,7 +416,10 @@
       <workItem from="1545048995695" duration="19614000" />
       <workItem from="1545129918023" duration="27762000" />
       <workItem from="1545214327663" duration="35251000" />
-      <workItem from="1545306017546" duration="34039000" />
+      <workItem from="1545306017546" duration="34279000" />
+      <workItem from="1546439396915" duration="12540000" />
+      <workItem from="1546505142840" duration="15646000" />
+      <workItem from="1546596327879" duration="17283000" />
     </task>
     <task id="LOCAL-00001" summary="config">
       <created>1544542400742</created>
@@ -478,25 +477,33 @@
       <option name="project" value="LOCAL" />
       <updated>1545257126376</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="homePage ok">
+      <created>1545347167044</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1545347167044</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161437000" />
+    <option name="totallyTimeSpent" value="207146000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="12" y="36" width="1349" height="1053" extended-state="0" />
+    <frame x="12" y="27" width="1546" height="1053" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.22173913" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.22173913" />
       <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8584906" visible="true" weight="0.25479662" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8584906" visible="true" weight="0.23133333" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" weight="0.27394807" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32934782" />
       <window_info id="Structure" order="1" sideWeight="0.14150943" side_tool="true" weight="0.354717" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -504,10 +511,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.32934782" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32934782" />
+      <window_info anchor="bottom" id="Message" order="0" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -528,38 +534,10 @@
     <MESSAGE value="canvas homePage" />
     <MESSAGE value="helloWord homepage" />
     <MESSAGE value="helloWord homepage txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="helloWord homepage txt" />
+    <MESSAGE value="homePage ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="homePage ok" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/julblain/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/julblain/node_modules/sass-loader/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/julblain/templates/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/julblain/node_modules/bootstrap/scss/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4200">
-          <caret line="200" column="10" selection-start-line="200" selection-end-line="200" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/julblain/templates/pages/home.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -684,9 +662,6 @@
         <state relative-caret-position="-8127" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/julblain/assets/scss/_home.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/julblain/assets/js/menuIcon.js" />
     <entry file="file://$PROJECT_DIR$/julblain/public/build/runtime.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -706,32 +681,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/julblain/public/js/lettering/lettering.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/julblain/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/julblain/public/js/home/arctext.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/julblain/public/js/home/circletype.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/julblain/public/js/lettering/lettering.js" />
+    <entry file="file://$PROJECT_DIR$/julblain/public/js/home/arctext.js" />
     <entry file="file://$PROJECT_DIR$/julblain/assets/scss/_nav.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="895">
@@ -741,61 +695,93 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/julblain/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
+        <state relative-caret-position="672">
           <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/julblain/templates/base.html.twig">
+    <entry file="file://$PROJECT_DIR$/julblain/public/js/home/circletype.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/julblain/public/js/events.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-147">
-          <caret line="20" column="79" selection-start-line="20" selection-start-column="79" selection-end-line="20" selection-end-column="79" />
+        <state relative-caret-position="168">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/julblain/public/js/menuIcon.js">
+    <entry file="file://$PROJECT_DIR$/julblain/public/js/home/meHomeCanvasBalls2.js" />
+    <entry file="file://$PROJECT_DIR$/julblain/public/js/home/meHomeCanvasBalls.js" />
+    <entry file="file://$PROJECT_DIR$/julblain/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="147">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/julblain/public/js/home/hello.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/julblain/assets/scss/_var.scss">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/julblain/templates/pages/home.html.twig">
+    <entry file="file://$PROJECT_DIR$/julblain/public/js/home/meHomeCanvas.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="36" column="66" selection-start-line="36" selection-start-column="66" selection-end-line="36" selection-end-column="66" />
-          <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
-            <element signature="e#1639#1669#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/julblain/assets/scss/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="166" column="23" selection-start-line="166" selection-start-column="23" selection-end-line="166" selection-end-column="23" />
+        <state relative-caret-position="21">
+          <caret line="77" column="12" selection-start-line="77" selection-start-column="12" selection-end-line="77" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/julblain/public/js/canvas.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="97" column="42" selection-start-line="97" selection-start-column="42" selection-end-line="97" selection-end-column="42" />
+        <state relative-caret-position="406">
+          <caret line="144" column="52" selection-start-line="144" selection-start-column="34" selection-end-line="144" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/julblain/public/js/home/meHomeBtnCircle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="742">
+          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/julblain/assets/scss/_home.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1057">
+          <caret line="140" selection-start-line="140" selection-end-line="140" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/julblain/assets/scss/_var.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/julblain/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="37" column="30" lean-forward="true" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/julblain/templates/pages/home.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="59" column="58" selection-start-line="59" selection-start-column="58" selection-end-line="59" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/julblain/assets/scss/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-119">
+          <caret line="86" column="22" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
         </state>
       </provider>
     </entry>

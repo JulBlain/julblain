@@ -4,10 +4,10 @@
 {% block body %}
     <section class="w-100" id="home">
 
-        <div class="container-fluid h-100 ">
+        <div class="container h-100 ">
             <div class="row h-100 w-100 ">
                 <div class="col-1 h100" id="arrowHello">
-                    <p class="arrowTxt">Bienvenue</p>
+                    <p class="arrowTxt arrowTxt2">à propos de moi</p>
                     <img src="{{ asset('img/arrowPink.jpg') }}" alt="flèche directionnelle descendante" class="arrowImg">
                 </div>
 
@@ -31,29 +31,76 @@
             </div>
         </div>
 
-
         <div id="btnHappy">
-
-                <div id="btnHappyTxt" > BOUTON de bonne humeur. . .</div>
-
-            <!-- <div id="btnHappyCircle"></div> -->
+            <div id="btnHappyTxt" > BOUTON de bonne humeur. . .</div>
+        </div>
     </section>
 
-<section class="w-100" id="homeTest" style="background-color: red;">
 
-    </div>
+    <section class="w-100" id="homeMe">
+        <div class="container h-100 ">
+            <div class="row h-100 w-100 ">
+                <div class="col-1 h100" id="arrowHello">
+                    <h2 class="arrowTxt arrowTxt1">Moi</h2>
+                    <p class="arrowTxt arrowTxt2">Mes projets</p>
+                    <img src="{{ asset('img/arrowPink.jpg') }}" alt="flèche directionnelle descendante" class="arrowImg">
+                </div>
 
 
-</section>
+                <div class="col-11" id="mePresentation">
+                    <canvas id="meCanvas" class="w-100 h-100"></canvas>
+                    <!--<div>
+                        <p class="demo1">Langages...</p>
+                        <span id="demo1Circle"></span>
+
+                         <circle cx="450" cy="100" r="70" fill="lightsteelblue" stroke="midnightblue" stroke-width="6" />
+                    </div>
+
+-->
+                    <svg  id="svgLanguages" viewBox="0 0 600 200" >
+
+                        <path  d="
+       M 100, 100
+        m -75, 0
+        a 75,75 0 1,0 150,0
+        a 75,75 0 1,0 -150,0 z
+    " id="pathLangages"/>
+                        <text id="textLanguages" >
+                            <textPath id="textPathLangages" xlink:href="#pathLangages">
+                                <tspan dy="10">Langages...</tspan>
+                            </textPath>
+                        </text>
+                    </svg>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </section>
 {% endblock %}
 
 {% block javascripts %}
 
     <script src="http://127.0.0.1:8000/js/canvas.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="http://127.0.0.1:8000/js/home/arctext.js"></script>
 
+    <!-- btn hello home -->
     <script src="http://127.0.0.1:8000/js/home/hello.js"></script>
+
+    <!-- canvas triangle -->
+    <script src="http://127.0.0.1:8000/js/home/meHomeCanvas.js"></script>
+    <script src="http://127.0.0.1:8000/js/home/meHomeBtnCircle.js"></script>
+
 
 
 

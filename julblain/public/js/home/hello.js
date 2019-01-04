@@ -4,9 +4,9 @@
 new CircleType(document.getElementById('btnHappyTxt'));
 var truc = document.querySelector('#btnHappyTxt > div');
 
-var div = document.createElement('div');
-div.id = "btnHappyCircle" ;
-truc.appendChild(div);
+var btnHappy = document.createElement('button');
+btnHappy.id = "btnHappyCircle" ;
+truc.appendChild(btnHappy);
 
 
 

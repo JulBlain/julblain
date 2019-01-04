@@ -1,6 +1,8 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "var";
 @import "nav";
+@import "home";
+
 
 * {
   box-sizing: border-box;
@@ -26,6 +28,12 @@ body {
   flex-wrap: wrap;
   align-items: center;
 
+}
+
+section {
+  height: 100vh;
+  padding-top: $heightHeader;
+  padding-bottom: $wBorderScreen;
 }
 
 #borderScreen {
@@ -63,141 +71,159 @@ footer {
   background-color: blue;
 }
 
-/*home*/
-section {
-  height: 100vh;
-  padding-top: $heightHeader;
-  padding-bottom: $wBorderScreen;
-}
 
+/*me*/
 
-#arrowHello {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding-bottom: $wBorderScreen;
-
-  .arrowTxt {
-    writing-mode: vertical-lr;
-    text-orientation: mixed;
-    font-family: $teko;
-    font-size: 1.2rem;
-    color: $pink;
-    align-self: center;
-
-    text-align: end;
-    padding-bottom: 5vh;
-
-  }
-
-  .arrowImg {
-    align-self: center;
-    width: 10px;
-  }
-}
-
-#homePresentation {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-#homeCanvas {
+#meCanvas {
   position: absolute;
   padding: $wBorderScreen;
   z-index: $ziCanvas;
 }
 
-/*hello*/
-#helloWordBox {
-  padding:  (4*$wBorderScreen) $wBorderScreen (2*$wBorderScreen) $wBorderScreen;
 
-  font-weight: 800;
-  font-size: 1em;
-  text-transform: uppercase;
-  letter-spacing: 0.5em;
 
-  font-family: $zcool;
+@mixin levitate {
+  animation: levitate 3s infinite,
+  flicker 3s infinite;
 }
 
-.helloWord {
-  color: $black;
-  display: inline-block;
-  line-height: 1em;
+
+#svgLanguages {
+  fill : $pink;
+  @include levitate;
 }
 
-/*Jul Blain*/
-#homeTitle {
-  position: relative;
-  font-weight: 200;
-  font-size: 1.5rem;
-  font-family: $poiret;
-  padding: (5*$wBorderScreen) $wBorderScreen;
+
+#pathLangages {
+  stroke: $lightBlue;
+  stroke-width: 50px;
 }
 
-#myName {
-  color: #ffc000;;
-  font-size: 2.2rem;
-
-}
-#homeTitle .text-wrapper {
-  position: relative;
-  display: inline-block;
-  padding-top: 0.2em;
-  padding-right: 0.05em;
-  padding-bottom: 0.1em;
-  overflow: hidden;
+#pathLangages:hover {
+  stroke: $pink;
 }
 
-#homeTitle .letter {
-  transform-origin: 50% 100%;
-  display: inline-block;
-  line-height: 1em;
+#textLanguages {
+  fill : $white;
 }
 
-/*btnHappy*/
-
-#warped {
-
- // -webkit-animation: rotation 2s infinite linear;
-}
-
-#btnHappy {
-  position: absolute;
-  z-index: $ziBtnHappy;
-  top: 40vh ;
-  right: 25vw;
-  display: flex;
-
-
-}
-#btnHappyTxt {
-  font-weight: 600;
-
-  font-family: $teko;
- color:  $pink;
-margin: auto;
-  font-size: 15px;
-
-  animation:   5s linear 0s infinite rotation;
-
-   > div {
-     display: flex;
-   }
-
+#textPathLangages {
+  font-family: "Teko", sans-serif;
+  font-size: 45px;
+  letter-spacing: 25px;
 
 }
 
-#btnHappyCircle {
-  //position: relative;
-  width: 50px;
-  height: 50px;
-  background-color: $yellow;
-  margin: auto;
-  border-radius: 50%;
 
+
+
+@-webkit-keyframes flicker {
+  from {
+    opacity: 0.75;
+  }
+  4% {
+    opacity: 0.75;
+  }
+  6% {
+    opacity: 0.7;
+  }
+  8% {
+    opacity: 0.80;
+  }
+  10% {
+    opacity: 0.70;
+  }
+  11% {
+    opacity: 0.75;
+  }
+  12% {
+    opacity: 0.9;
+  }
+  14% {
+    opacity: 0.8;
+  }
+  16% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 0.95;
+  }
+  19% {
+    opacity: 0.75;
+  }
+  20% {
+    opacity: 0.75;
+  }
+  24% {
+    opacity: 0.75;
+  }
+  26% {
+    opacity: 1;
+  }
+  28% {
+    opacity: 0.75;
+  }
+  38% {
+    opacity: 0.7;
+  }
+  40% {
+    opacity: 0.75;
+  }
+  42% {
+    opacity: 0.85;
+  }
+  44% {
+    opacity: 0.75;
+  }
+  46% {
+    opacity: 0.75;
+  }
+  56% {
+    opacity: 0.75;
+  }
+  58% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0.75;
+  }
+  68% {
+    opacity: 0.75;
+  }
+  70% {
+    opacity: 0.85; /*peak*/
+  }
+  72% {
+    opacity: 0.75;
+  }
+  93% {
+    opacity: 0.75;
+  }
+  95% {
+    opacity: 0.85; /*peak*/
+  }
+  97% {
+    opacity: 0.75;
+  }
+  to {
+    opacity: 0.75;
+  }
 }
 
+@keyframes levitate {
+  0% {
+    transform: translateY(-0.5rem);
+  }
+  50% {
+    transform: translateY(0rem);
+  }
+  100% {
+    transform: translateY(-0.5rem);
+  }
+}
+
+
+/*homeAnim*/
 @-webkit-keyframes rotation {
   0% {
     -webkit-transform: rotate(0deg);

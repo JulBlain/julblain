@@ -1,12 +1,4 @@
 var draw = {
-    //coordonates to draw
-    cursorX : "",
-    cursorY : "",
-    //coordinates of the canvas position on the page
-    canvasPositionX : "",
-    canvasPositionY : "",
-    canvasPositionX0 : document.getElementById("homeCanvas").offsetLeft,
-    canvasPositionY0 : document.getElementById("homeCanvas").offsetTop,
     vertices :  [],
     t : 1,
     t2 : 0,// variable to hold how many frames have elapsed in the animation
@@ -36,13 +28,13 @@ var draw = {
 
 
     calcVertices : function () {
-        var homeFirstLineX = Math.round(this.canvas.width / 2);
-        var homeFirstLineY = Math.round(this.canvas.height / 5);
+        var homeFirstLineX = Math.round(this.canvas.width / 3);
+        var homeFirstLineY = Math.round(this.canvas.height / 4);
 
 
 
 
-       this.vertices.push({
+        this.vertices.push({
             x: this.canvas.width,
             y: 0
         });
@@ -61,43 +53,43 @@ var draw = {
 
 
 
-       /* this.context.beginPath();
-        this.context.moveTo( this.canvas.width, 0);
-        this.context.lineTo(homeFirstLineX, homeFirstLineY);
-        this.context.lineTo(this.canvas.width, this.canvas.height);
-        this.context.lineTo(this.canvas.width, 0);
+        /* this.context.beginPath();
+         this.context.moveTo( this.canvas.width, 0);
+         this.context.lineTo(homeFirstLineX, homeFirstLineY);
+         this.context.lineTo(this.canvas.width, this.canvas.height);
+         this.context.lineTo(this.canvas.width, 0);
 
-        this.context.strokeStyle = draw.colorPen;
-        this.context.lineWidth = draw.lineWidth;
-        //triangle
-        this.context.fillStyle = draw.colorPen;
-        this.context.fill();
-        this.context.stroke();
-    */
-       /* if (this.started == false) {
-            this.context.beginPath();
-            this.context.moveTo(this.cursorX, this.cursorY);
-            this.started = true;
-        }
+         this.context.strokeStyle = draw.colorPen;
+         this.context.lineWidth = draw.lineWidth;
+         //triangle
+         this.context.fillStyle = draw.colorPen;
+         this.context.fill();
+         this.context.stroke();
+     */
+        /* if (this.started == false) {
+             this.context.beginPath();
+             this.context.moveTo(this.cursorX, this.cursorY);
+             this.started = true;
+         }
 
-        else {
-            this.context.lineTo(this.cursorX, this.cursorY);
-            this.context.strokeStyle = draw.colorPen;
-            this.context.lineWidth = draw.lineWidth;
-            this.context.stroke();
-        }; */
+         else {
+             this.context.lineTo(this.cursorX, this.cursorY);
+             this.context.strokeStyle = draw.colorPen;
+             this.context.lineWidth = draw.lineWidth;
+             this.context.stroke();
+         }; */
     },
 
     calcWaypoints : function () {
-        
+
         for (var i = 1; i < this.vertices.length; i++) {
             var pt0 = this.vertices[i - 1];
             var pt1 = this.vertices[i];
             var dx = pt1.x - pt0.x;
             var dy = pt1.y - pt0.y;
-            for (var j = 0; j < 50; j++) {
-                var x = pt0.x + dx * j / 50;
-                var y = pt0.y + dy * j / 50;
+            for (var j = 0; j < 60; j++) {
+                var x = pt0.x + dx * j / 60;
+                var y = pt0.y + dy * j / 60;
                 this.waypoints.push({
                     x: x,
                     y: y
@@ -106,7 +98,7 @@ var draw = {
         }
         return (this.waypoints);
     },
-    
+
     animate : function () {
         if (draw.t < draw.points.length - 1) {
             requestAnimationFrame(draw.animate);
@@ -152,7 +144,7 @@ var draw = {
         var opacity = draw.t2 ;
         draw.context.fillStyle = "rgba(123, 220, 214, "+ opacity + ")" ;
         draw.context.fill();
-        draw.t2 = draw.t2 + 0.01;
+        draw.t2 = draw.t2 + 0.001;
 
     },
 
@@ -166,12 +158,3 @@ window.addEventListener('load', function () {
         "#7bdcd6", 1, "round", "round");
 });
 
-/*$(document).ready(function(){
-    $('.toggle').click(function(){
-        draw.init(
-            document.getElementById("homeCanvas"),
-            document.getElementById("homeCanvas").offsetWidth,
-            document.getElementById("homeCanvas").offsetHeight,
-            "#fe18d5", 1, "round", "round");
-    });
-});*/
