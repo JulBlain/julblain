@@ -94,24 +94,97 @@ footer {
 }
 
 
-#pathLangages {
+#pathLanguages {
   stroke: $lightBlue;
   stroke-width: 50px;
 }
 
-#pathLangages:hover {
+#pathLanguages:hover {
   stroke: $pink;
 }
+
 
 #textLanguages {
   fill : $white;
 }
 
-#textPathLangages {
+#textPathLanguages {
   font-family: "Teko", sans-serif;
   font-size: 45px;
   letter-spacing: 25px;
 
+}
+
+
+/*mask*/
+
+#homeLanguages {
+  position: relative;
+  text-align: left;
+
+}
+#svgLanguages {
+  display: inline-block;
+  position: absolute;
+  width: $homeMeBtnW;
+  right: $homeMeBtnLanguagesR;
+  top: $homeMeBtnLanguagesT;
+
+  z-index: 2;
+
+
+}
+.homeMaskList {
+  position: absolute;
+  //display: flex;
+  //flex-direction: column;
+  //justify-content: right;
+ padding-right: $homeMeBtnW/2;
+  width: 100%;
+}
+
+#homeMaskBox {
+  transform: scale(0);
+  transition: all .4s ease-in-out 0s;
+  border: 2px solid black;
+  transform-origin: right;
+  z-index: -2;
+  position: relative;
+  top: $homeMeBtnLanguagesT + ($homeMeBtnW/2);
+  right: $homeMeBtnLanguagesR + ($homeMeBtnW/2);
+
+
+}
+.homeMaskItems {
+  border: red solid 1px;
+  @include levitate;
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+  //padding-right: $homeMeBtnW/2;
+  text-decoration: none;
+
+
+
+}
+
+.homeMaskItems1 {
+  position: absolute;
+
+}
+.homeMaskItems1 i{
+ font-size: 3rem;
+  width: $homeMeBtnW/1.3;
+  height: $homeMeBtnW/1.3;
+  border-radius: 50%;
+  line-height: 1.6;
+  background-color: $blue;
+
+}
+
+.homeMaskItems1 i::before {
+  margin-right: 8px;
+  color: $white;
 }
 
 

@@ -2,7 +2,7 @@
 
 
 new CircleType(document.getElementById('btnHappyTxt'));
-var truc = document.querySelector('#btnHappyTxt > div');
+let truc = document.querySelector('#btnHappyTxt > div');
 
 var btnHappy = document.createElement('button');
 btnHappy.id = "btnHappyCircle" ;
