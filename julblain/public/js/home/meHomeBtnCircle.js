@@ -1,5 +1,5 @@
 let svgHomeMeNF = document.getElementById('pathLanguages');
-let maskMe = document.getElementById('homeMaskBox');
+let maskMe = document.getElementById('homeMaskBoxLanguages');
 let iSvgBtn = 0;
 
 function svgHomeMe() {

@@ -57,30 +57,61 @@
                     </div>
 
 -->
-                    <div id="homeLanguages">
-                        <svg  id="svgLanguages" viewBox="0 0 200 200">
+                    <div id="homeLanguages" class="homeMeBtnBox">
+                        <svg  id="svgLanguages" viewBox="0 0 200 200" class="homeMeBtnSvg">
                                 <path  d="
                                M 100, 100
                                 m -75, 0
                                 a 75,75 0 1,0 150,0
                                 a 75,75 0 1,0 -150,0 z
-                            " id="pathLanguages"/>
+                            " id="pathLanguages" class="pathSvg"/>
 
                             <text id="textLanguages" >
-                                <textPath id="textPathLanguages" xlink:href="#pathLanguages">
-                                    <tspan dy="10">Langages...</tspan>
+                                <textPath id="textPathLanguages" class="txtSvg" xlink:href="#pathLanguages">
+                                    <tspan dy="10">Langage...</tspan>
                                 </textPath>
                             </text>
                         </svg>
 
 
-                        <div id="homeMaskBox">
+                        <div class="homeMaskBox" id="homeMaskBoxLanguages">
                             <ul class="homeMaskList">
-                                <li class="homeMaskItems homeMaskItems1"><i class="fab fa-php"></i></li>
-                                <li class="homeMaskItems homeMaskItems2">Deux</li>
+                                <li class="homeMaskItems homeMaskItemsPhp"><i class="fab fa-php"></i></li>
+                                <li class="homeMaskItems homeMaskItemsJs"><i class="fab fa-js"></i></li>
+                                <li class="homeMaskItems homeMaskItemsCss"><i class="fab fa-css3-alt"></i></li>
+                                <li class="homeMaskItems homeMaskItemsHtml"><i class="fab fa-html5"></i></li>
+                                <li class="homeMaskItems homeMaskItemsSass"><i class="fab fa-sass"></i></li>
                             </ul>
+
                         </div>
 
+                    </div>
+
+                    <div id="homeLibrairy" class="homeMeBtnBox">
+                        <svg  id="svgLibrairy" class="homeMeBtnSvg"  viewBox="0 0 200 200">
+                            <path  d="
+                               M 100, 100
+                                m -75, 0
+                                a 75,75 0 1,0 150,0
+                                a 75,75 0 1,0 -150,0 z
+                            " id="pathLibrairy" class="pathSvg"/>
+                            <text id="textLibrairy" >
+                                <textPath id="textPathLibrairy" class="txtSvg" xlink:href="#pathLibrairy">
+                                    <tspan dy="10">| Framework | Library </tspan>
+                                </textPath>
+                            </text>
+                        </svg>
+
+                        <div class="homeMaskBox">
+
+                            <ul class="homeMaskList">
+                                <li class="homeMaskItems homeMaskItemsSymf"><i class="icon-symfony"></i> icon-symfony</li>
+                                <li class="homeMaskItems homeMaskItems"></li>
+                                <li class="homeMaskItems homeMaskItems"></li>
+                                <li class="homeMaskItems homeMaskItems"></li>
+                                <li class="homeMaskItems homeMaskItems"></li>
+                            </ul>
+                        </div>
                     </div>
 
 
@@ -96,6 +127,7 @@
 
 
     </section>
+    <p><i class="icon-symfony"></i></p>
 {% endblock %}
 
 {% block javascripts %}

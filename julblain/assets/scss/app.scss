@@ -87,66 +87,74 @@ footer {
   flicker 3s infinite;
 }
 
+@mixin translate1 {
+  animation: translate1 3s infinite;
+}
 
-#svgLanguages {
+@mixin translate2 {
+  animation: translate2 3s infinite;
+}
+
+
+.homeMeBtnSvg {
   fill : $pink;
   @include levitate;
 }
 
 
-#pathLanguages {
+.pathSvg {
   stroke: $lightBlue;
   stroke-width: 50px;
 }
 
-#pathLanguages:hover {
+.pathSvg:hover {
   stroke: $pink;
 }
 
 
-#textLanguages {
+.txtSvg {
   fill : $white;
+  font-family: "Teko", sans-serif;
 }
 
 #textPathLanguages {
-  font-family: "Teko", sans-serif;
   font-size: 45px;
   letter-spacing: 25px;
+}
 
+#textPathLibrairy {
+  font-size: 40px;
+  letter-spacing: 10px;
 }
 
 
 /*mask*/
 
-#homeLanguages {
+.homeMeBtnBox {
   position: relative;
   text-align: left;
 
 }
-#svgLanguages {
+.homeMeBtnSvg {
   display: inline-block;
   position: absolute;
   width: $homeMeBtnW;
+  z-index: 2;
+}
+
+#svgLanguages {
   right: $homeMeBtnLanguagesR;
   top: $homeMeBtnLanguagesT;
-
-  z-index: 2;
-
-
-}
-.homeMaskList {
-  position: absolute;
-  //display: flex;
-  //flex-direction: column;
-  //justify-content: right;
- padding-right: $homeMeBtnW/2;
-  width: 100%;
 }
 
-#homeMaskBox {
+#svgLibrairy {
+ left: $homeMeBtnLibrairyL ;
+  top : $homeMeBtnLibrairyT ;
+}
+
+.homeMaskBox {
   transform: scale(0);
   transition: all .4s ease-in-out 0s;
-  border: 2px solid black;
   transform-origin: right;
   z-index: -2;
   position: relative;
@@ -156,35 +164,101 @@ footer {
 
 }
 .homeMaskItems {
-  border: red solid 1px;
   @include levitate;
   display: inline-block;
-  width: 100%;
+
   text-align: right;
-  //padding-right: $homeMeBtnW/2;
+
   text-decoration: none;
 
 
 
 }
 
-.homeMaskItems1 {
+.homeMaskItems {
   position: absolute;
 
-}
-.homeMaskItems1 i{
- font-size: 3rem;
-  width: $homeMeBtnW/1.3;
-  height: $homeMeBtnW/1.3;
-  border-radius: 50%;
-  line-height: 1.6;
-  background-color: $blue;
+  i {
+    border-radius: 50%;
+    width: $homeMeBtnW/1.3;
+    height: $homeMeBtnW/1.3;
+    color: $white;
+
+    font-size: 3rem;
+    line-height: 1.6;
+  }
 
 }
 
-.homeMaskItems1 i::before {
+.homeMaskItemsPhp {
+  top: -15vh;
+  right: 20vw;
+}
+.homeMaskItemsJs {
+  top: 5vh;
+  right: 15vw;
+}
+.homeMaskItemsCss {
+  top: 25vh;
+  right: 25vw;
+}
+.homeMaskItemsHtml {
+  top: 15vh;
+  right: -15vw;
+}
+
+.homeMaskItemsSass {
+  top: 40vh;
+  right: -10vw;
+}
+
+.homeMaskItemsPhp i {
+  background-color: #777BB0;
+ @include translate1;
+}
+.homeMaskItemsJs i{
+  background-color: #F7DE45;
+  @include translate2;
+}
+.homeMaskItemsCss i{
+  background-color: #2D65EB;
+  @include translate2;
+}
+.homeMaskItemsHtml i{
+  background-color: #F06634;
+  @include translate1;
+}
+.homeMaskItemsSass i{
+  background-color: #CD6597;
+  @include translate1;
+}
+
+.homeMaskItemsPhp i::before {
   margin-right: 8px;
-  color: $white;
+}
+
+.homeMaskItemsJs i::before {
+  margin-right: 16px;
+}
+
+.homeMaskItemsCss i::before {
+  margin-right: 20px;
+}
+.homeMaskItemsHtml i::before {
+  margin-right: 20px;
+}
+.homeMaskItemsSass i::before {
+  margin-right: 5px;
+}
+
+
+// 2e button
+
+.icon-symfony::befor {
+ // font-family: "FontMfizz";
+  color: red;
+  font-size: 40px;
+  z-index: 50;
 }
 
 
@@ -303,5 +377,30 @@ footer {
   }
   100% {
     -webkit-transform: rotate(359deg);
+  }
+}
+
+/*home me circle translate*/
+@keyframes translate1 {
+  0% {
+    transform: translateX(-0.5rem);
+  }
+  50% {
+    transform: translateX(0rem);
+  }
+  100% {
+    transform: translateX(-0.5rem);
+  }
+}
+
+@keyframes translate2 {
+  0% {
+    transform: translateX(0.5rem);
+  }
+  50% {
+    transform: translateX(0rem);
+  }
+  100% {
+    transform: translateX(0.5rem);
   }
 }

@@ -17,7 +17,7 @@ $('#homeTitle .letters').each(function(){
 
 });
 
-
+//helloWord
 anime.timeline({loop: false})
     .add({
         targets: '.helloWord',
