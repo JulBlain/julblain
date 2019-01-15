@@ -74,7 +74,7 @@
                         </svg>
 
 
-                        <div class="homeMaskBox" id="homeMaskBoxLanguages">
+                       <div class="homeMaskBox" id="homeMaskBoxLanguages">
                             <ul class="homeMaskList">
                                 <li class="homeMaskItems homeMaskItemsPhp"><i class="fab fa-php"></i></li>
                                 <li class="homeMaskItems homeMaskItemsJs"><i class="fab fa-js"></i></li>
@@ -82,7 +82,6 @@
                                 <li class="homeMaskItems homeMaskItemsHtml"><i class="fab fa-html5"></i></li>
                                 <li class="homeMaskItems homeMaskItemsSass"><i class="fab fa-sass"></i></li>
                             </ul>
-
                         </div>
 
                     </div>
@@ -97,21 +96,45 @@
                             " id="pathLibrairy" class="pathSvg"/>
                             <text id="textLibrairy" >
                                 <textPath id="textPathLibrairy" class="txtSvg" xlink:href="#pathLibrairy">
-                                    <tspan dy="10">| Framework | Library </tspan>
+                                    <tspan dy="10">| Framework | Library | CMS </tspan>
+                                </textPath>
+                            </text>
+                        </svg>
+
+                       <div class="homeMaskBox">
+                            <ul class="homeMaskList">
+                                <li class="homeMaskItems homeMaskItemsSymf"><i class="icon-symfony"></i></li>
+                                <li class="homeMaskItems homeMaskItemsWP"><i class="icon-wordpress"></i></li>
+                                <li class="homeMaskItems homeMaskItemsBootstrap"><i class="icon-bootstrap"></i></li>
+                                <li class="homeMaskItems homeMaskItemsJquery"><i class="icon-jquery"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="homeTool" class="homeMeBtnBox">
+                        <svg  id="svgTool" class="homeMeBtnSvg"  viewBox="0 0 200 200">
+                            <path  d="
+                               M 100, 100
+                                m -75, 0
+                                a 75,75 0 1,0 150,0
+                                a 75,75 0 1,0 -150,0 z
+                            " id="pathTool" class="pathSvg"/>
+                            <text id="textTool" >
+                                <textPath id="textPathTool" class="txtSvg" xlink:href="#pathTool">
+                                    <tspan dy="10">Outils...</tspan>
                                 </textPath>
                             </text>
                         </svg>
 
                         <div class="homeMaskBox">
-
-                            <ul class="homeMaskList">
-                                <li class="homeMaskItems homeMaskItemsSymf"><i class="icon-symfony"></i> icon-symfony</li>
-                                <li class="homeMaskItems homeMaskItems"></li>
-                                <li class="homeMaskItems homeMaskItems"></li>
-                                <li class="homeMaskItems homeMaskItems"></li>
-                                <li class="homeMaskItems homeMaskItems"></li>
-                            </ul>
-                        </div>
+                             <ul class="homeMaskList">
+                                 <li class="homeMaskItems homeMaskItemsSql"><i class="icon-mysql"></i></li>
+                                 <li class="homeMaskItems homeMaskItemsApache"><i class="icon-apache"></i></li>
+                                 <li class="homeMaskItems homeMaskItemsGit"><i class="icon-git"></i></li>
+                                 <li class="homeMaskItems homeMaskItemsUbuntu"><i class="icon-ubuntu"></i></li>
+                                 <li class="homeMaskItems homeMaskItemsAdobe"><i class="fab fa-adobe"></i></li>
+                             </ul>
+                         </div>
                     </div>
 
 
@@ -120,14 +143,8 @@
             </div>
         </div>
 
-
-
-
-
-
-
     </section>
-    <p><i class="icon-symfony"></i></p>
+
 {% endblock %}
 
 {% block javascripts %}

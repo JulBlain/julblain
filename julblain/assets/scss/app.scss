@@ -81,7 +81,6 @@ footer {
 }
 
 
-
 @mixin levitate {
   animation: levitate 3s infinite,
   flicker 3s infinite;
@@ -101,7 +100,6 @@ footer {
   @include levitate;
 }
 
-
 .pathSvg {
   stroke: $lightBlue;
   stroke-width: 50px;
@@ -110,7 +108,6 @@ footer {
 .pathSvg:hover {
   stroke: $pink;
 }
-
 
 .txtSvg {
   fill : $white;
@@ -124,7 +121,7 @@ footer {
 
 #textPathLibrairy {
   font-size: 40px;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
 }
 
 
@@ -153,7 +150,7 @@ footer {
 }
 
 .homeMaskBox {
-  transform: scale(0);
+ transform: scale(0);
   transition: all .4s ease-in-out 0s;
   transform-origin: right;
   z-index: -2;
@@ -171,17 +168,17 @@ footer {
 
   text-decoration: none;
 
-
-
 }
 
 .homeMaskItems {
   position: absolute;
+  border-radius: 50%;
 
   i {
-    border-radius: 50%;
+    display: block;
     width: $homeMeBtnW/1.3;
     height: $homeMeBtnW/1.3;
+    border-radius: 50%;
     color: $white;
 
     font-size: 3rem;
@@ -254,11 +251,144 @@ footer {
 
 // 2e button
 
-.icon-symfony::befor {
- // font-family: "FontMfizz";
-  color: red;
-  font-size: 40px;
-  z-index: 50;
+#homeLibrairy i {
+  line-height: 1.7;
+}
+
+.homeMaskItemsSymf {
+  top: -15vh;
+  left: 40vw ;
+
+  i {
+    @include translate1;
+    background-color:  #201D21;
+  }
+}
+
+.homeMaskItemsSymf .icon-symfony::before {
+  margin-right: 14px;
+}
+
+.homeMaskItemsWP {
+  left: 65vw ;
+  i {
+    background-color: #287497;
+    @include translate2;
+  }
+
+  i::before {
+    margin-right: 14px;
+  }
+}
+
+.homeMaskItemsBootstrap {
+  top: 22vh;
+  left: 60vw ;
+
+  i {
+    @include translate1;
+    background-color: #564079;
+    }
+
+  i::before {
+    margin-right: 14px;
+  }
+}
+
+.homeMaskItemsJquery {
+  top: 30vh;
+  left: 27vw ;
+
+  i {
+    @include translate2;
+    background-color: #1269A8;
+  }
+
+  i::before {
+    margin-right: 14px;
+  }
+}
+
+//3e btn
+#textPathTool {
+  font-size: 45px;
+  letter-spacing: 20px;
+}
+
+#svgTool {
+  top: 50vh;
+  right: 20vw;
+}
+
+.homeMaskItemsSql {
+  left: 50vw ;
+  top: 10vh;
+  i {
+    background-color: #46789D;
+    @include translate1;
+  }
+
+  i::before {
+    margin-right: 13px;
+  }
+}
+
+.homeMaskItemsApache {
+  left: 25vw ;
+  top: -5vh;
+
+  i {
+    background-color: #CF2930;
+    @include translate2;
+  }
+
+  i::before {
+    margin-right: 15px;
+    line-height: 1.7;
+
+  }
+}
+
+.homeMaskItemsGit {
+  left: 23vw ;
+  top: 20vh;
+
+  i {
+    background-color: #F85135;
+    @include translate1;
+  }
+
+  i::before {
+    margin-right: 15px;
+    line-height: 1.7;
+  }
+}
+
+.homeMaskItemsUbuntu {
+  top: -8vh;
+  left: 65vw;
+  i {
+    background-color: #E75630;
+    @include translate1;
+  }
+
+  i::before {
+    margin-right: 17px;
+    line-height: 1.2;
+  }
+}
+
+.homeMaskItemsAdobe {
+  left: 75vw ;
+  top: 20vh;
+  i {
+    background-color: #FE161D;
+    @include translate2;
+  }
+
+  i::before {
+    margin-right: 16px;
+  }
 }
 
 
@@ -402,5 +532,29 @@ footer {
   }
   100% {
     transform: translateX(0.5rem);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    transform: translateX(0.9rem);
+  }
+  50% {
+    transform: translateX(0.4rem);
+  }
+  100% {
+    transform: translateX(0rem);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateX(0.1rem);
+  }
+  50% {
+    transform: translateX(0.6rem);
+  }
+  100% {
+    transform: translateX(1rem);
   }
 }
