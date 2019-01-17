@@ -152,14 +152,26 @@ footer {
 .homeMaskBox {
  transform: scale(0);
   transition: all .4s ease-in-out 0s;
-  transform-origin: right;
+
   z-index: -2;
   position: relative;
   top: $homeMeBtnLanguagesT + ($homeMeBtnW/2);
   right: $homeMeBtnLanguagesR + ($homeMeBtnW/2);
 
-
 }
+
+#homeMaskBoxLanguages {
+  transform-origin: right;
+}
+#homeMaskBoxLibrairy {
+  transform-origin: 140px 70px;
+}
+
+#homeMaskBoxTool {
+  transform-origin: 200px 190px;
+}
+
+
 .homeMaskItems {
   @include levitate;
   display: inline-block;
@@ -240,9 +252,11 @@ footer {
 
 .homeMaskItemsCss i::before {
   margin-right: 20px;
+  line-height: 1.7;
 }
 .homeMaskItemsHtml i::before {
   margin-right: 20px;
+  line-height: 1.7;
 }
 .homeMaskItemsSass i::before {
   margin-right: 5px;
@@ -316,8 +330,8 @@ footer {
 }
 
 #svgTool {
-  top: 50vh;
-  right: 20vw;
+  top: 220px;
+  left: 80px;
 }
 
 .homeMaskItemsSql {
@@ -359,7 +373,7 @@ footer {
   }
 
   i::before {
-    margin-right: 15px;
+    margin-right: 13px;
     line-height: 1.7;
   }
 }
@@ -374,7 +388,7 @@ footer {
 
   i::before {
     margin-right: 17px;
-    line-height: 1.2;
+    line-height: 1.6;
   }
 }
 
@@ -537,24 +551,24 @@ footer {
 
 @keyframes fadeOut {
   0% {
-    transform: translateX(0.9rem);
+    opacity: 1;
   }
   50% {
-    transform: translateX(0.4rem);
+   opacity: 0.5;
   }
   100% {
-    transform: translateX(0rem);
+    opacity: 0;
   }
 }
 
 @keyframes fadeIn {
   0% {
-    transform: translateX(0.1rem);
+    opacity: 0;
   }
   50% {
-    transform: translateX(0.6rem);
+    opacity: 0.5;
   }
   100% {
-    transform: translateX(1rem);
+    opacity: 1;
   }
 }

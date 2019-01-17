@@ -1,5 +1,5 @@
 /*home*/
-#arrowHello {
+.arrowHello {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -40,7 +40,7 @@
   justify-content: space-between;
 }
 
-#homeCanvas {
+#homeCanvas, #homeProjectsCanvas {
   position: absolute;
   padding: $wBorderScreen;
   z-index: $ziCanvas;

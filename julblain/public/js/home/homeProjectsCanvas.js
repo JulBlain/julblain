@@ -1,8 +1,8 @@
-var draw2 = {
+var draw3 = {
     vertices :  [],
     t : 1,
     t2 : 0,// variable to hold how many frames have elapsed in the animation
-    draw2ed : 0,
+    draw3ed : 0,
     points : "",
     waypoints : [],
 
@@ -23,7 +23,7 @@ var draw2 = {
         this.calcVertices();
         this.points = this.calcWaypoints();
         this.animate();
-        this.draw2ed++;
+        this.draw3ed++;
     },
 
     calcVertices : function () {
@@ -68,63 +68,63 @@ var draw2 = {
     },
 
     animate : function () {
-        if (draw2.t < draw2.points.length - 1) {
-            requestAnimationFrame(draw2.animate);
+        if (draw3.t < draw3.points.length - 1) {
+            requestAnimationFrame(draw3.animate);
 
         }
         else {
-            draw2.context.beginPath();
-            draw2.context.moveTo(draw2.points[draw2.t - 1].x, draw2.points[draw2.t - 1].y);
-            draw2.context.lineTo(0, 0);
-            draw2.context.strokeStyle = draw2.colorPen;
-            draw2.context.lineWidth = draw2.lineWidth;
-            draw2.context.stroke();
+            draw3.context.beginPath();
+            draw3.context.moveTo(draw3.points[draw3.t - 1].x, draw3.points[draw3.t - 1].y);
+            draw3.context.lineTo(0, 0);
+            draw3.context.strokeStyle = draw3.colorPen;
+            draw3.context.lineWidth = draw3.lineWidth;
+            draw3.context.stroke();
 
-            draw2.triangle();
+            draw3.triangle();
             return;
 
         }
-        // draw2 a line segment from the last waypoint
+        // draw3 a line segment from the last waypoint
         // to the current waypoint
-        draw2.context.beginPath();
-        draw2.context.moveTo(draw2.points[draw2.t - 1].x, draw2.points[draw2.t - 1].y);
-        draw2.context.lineTo(draw2.points[draw2.t].x, draw2.points[draw2.t].y);
+        draw3.context.beginPath();
+        draw3.context.moveTo(draw3.points[draw3.t - 1].x, draw3.points[draw3.t - 1].y);
+        draw3.context.lineTo(draw3.points[draw3.t].x, draw3.points[draw3.t].y);
 
-        draw2.context.strokeStyle = draw2.colorPen;
-        draw2.context.lineWidth = draw2.lineWidth;
-        draw2.context.stroke();
+        draw3.context.strokeStyle = draw3.colorPen;
+        draw3.context.lineWidth = draw3.lineWidth;
+        draw3.context.stroke();
         // increment "t" to get the next waypoint
-        draw2.t++;
+        draw3.t++;
 
     },
 
     triangle : function () {
-        if (draw2.t2 < 1000) {
-            requestAnimationFrame(draw2.triangle); //permet de gerer l'animation sans saccade
+        if (draw3.t2 < 1000) {
+            requestAnimationFrame(draw3.triangle); //permet de gerer l'animation sans saccade
         }
 
-        draw2.context.beginPath();
-        draw2.context.moveTo( draw2.vertices[0].x, draw2.vertices[0].y);
-        draw2.context.lineTo( draw2.vertices[1].x, draw2.vertices[1].y);
-        draw2.context.lineTo( draw2.vertices[2].x, draw2.vertices[2].y);
-        draw2.context.lineTo( draw2.vertices[3].x, draw2.vertices[3].y);
+        draw3.context.beginPath();
+        draw3.context.moveTo( draw3.vertices[0].x, draw3.vertices[0].y);
+        draw3.context.lineTo( draw3.vertices[1].x, draw3.vertices[1].y);
+        draw3.context.lineTo( draw3.vertices[2].x, draw3.vertices[2].y);
+        draw3.context.lineTo( draw3.vertices[3].x, draw3.vertices[3].y);
 
-        var opacity = draw2.t2 ;
-        draw2.context.fillStyle = "rgba(255, 192, 0, "+ opacity + ")" ;
-        draw2.context.fill();
-        draw2.t2 = draw2.t2 + 0.001;
+        var opacity = draw3.t2 ;
+        draw3.context.fillStyle = "rgba(255, 192, 0, "+ opacity + ")" ;
+        draw3.context.fill();
+        draw3.t2 = draw3.t2 + 0.001;
 
     },
 
 };
 
-//librairy inView js, draw2 in canvas.js
-$('#homeMe').on('inview', function (event, isInView) {
-    if((isInView) && (draw2.draw2ed === 0 )){
-        draw2.init(
-            document.getElementById("meCanvas"),
-            document.getElementById("meCanvas").offsetWidth,
-            document.getElementById("meCanvas").offsetHeight,
+//librairy inView js, draw3 in canvas.js
+$('#homeProjects').on('inview', function (event, isInView) {
+    if((isInView) && (draw3.draw3ed === 0 )){
+        draw3.init(
+            document.getElementById("homeProjectsCanvas"),
+            document.getElementById("homeProjectsCanvas").offsetWidth,
+            document.getElementById("homeProjectsCanvas").offsetHeight,
             "#ffc000", 1, "round", "round");
     }
 })

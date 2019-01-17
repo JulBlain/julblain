@@ -6,9 +6,9 @@
 
         <div class="container h-100 ">
             <div class="row h-100 w-100 ">
-                <div class="col-1 h100" id="arrowHello">
-                    <p class="arrowTxt arrowTxt2">à propos de moi</p>
-                    <img src="{{ asset('img/arrowPink.jpg') }}" alt="flèche directionnelle descendante" class="arrowImg">
+                <div class="col-1 h100 arrowHello">
+                    <p class="arrowTxt arrowTxt2">Compétences</p>
+                    <img src="{{ asset('img/arrowPink.jpg') }}" alt="" class="arrowImg">
                 </div>
 
                 <div class="col-11 h-100" id="homePresentation">
@@ -40,23 +40,15 @@
     <section class="w-100" id="homeMe">
         <div class="container h-100 ">
             <div class="row h-100 w-100 ">
-                <div class="col-1 h100" id="arrowHello">
-                    <h2 class="arrowTxt arrowTxt1">Moi</h2>
-                    <p class="arrowTxt arrowTxt2">Mes projets</p>
-                    <img src="{{ asset('img/arrowPink.jpg') }}" alt="flèche directionnelle descendante" class="arrowImg">
+                <div class="col-1 h100 arrowHello">
+                    <h2 class="arrowTxt arrowTxt1">Compétences</h2>
+                    <p class="arrowTxt arrowTxt2">Projets</p>
+                    <img src="{{ asset('img/arrowPink.jpg') }}" alt="" class="arrowImg">
                 </div>
 
 
                 <div class="col-11" id="mePresentation">
                     <canvas id="meCanvas" class="w-100 h-100"></canvas>
-                    <!--<div>
-                        <p class="demo1">Langages...</p>
-                        <span id="demo1Circle"></span>
-
-                         <circle cx="450" cy="100" r="70" fill="lightsteelblue" stroke="midnightblue" stroke-width="6" />
-                    </div>
-
--->
                     <div id="homeLanguages" class="homeMeBtnBox">
                         <svg  id="svgLanguages" viewBox="0 0 200 200" class="homeMeBtnSvg">
                                 <path  d="
@@ -101,9 +93,9 @@
                             </text>
                         </svg>
 
-                       <div class="homeMaskBox">
+                       <div class="homeMaskBox" id="homeMaskBoxLibrairy">
                             <ul class="homeMaskList">
-                                <li class="homeMaskItems homeMaskItemsSymf"><i class="icon-symfony"></i></li>
+                                <li class="homeMaskItems homeMaskItemsSymf" ><i class="icon-symfony"></i></li>
                                 <li class="homeMaskItems homeMaskItemsWP"><i class="icon-wordpress"></i></li>
                                 <li class="homeMaskItems homeMaskItemsBootstrap"><i class="icon-bootstrap"></i></li>
                                 <li class="homeMaskItems homeMaskItemsJquery"><i class="icon-jquery"></i></li>
@@ -126,7 +118,7 @@
                             </text>
                         </svg>
 
-                        <div class="homeMaskBox">
+                        <div class="homeMaskBox" id="homeMaskBoxTool">
                              <ul class="homeMaskList">
                                  <li class="homeMaskItems homeMaskItemsSql"><i class="icon-mysql"></i></li>
                                  <li class="homeMaskItems homeMaskItemsApache"><i class="icon-apache"></i></li>
@@ -136,13 +128,26 @@
                              </ul>
                          </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="w-100" id="homeProjects">
+        <div class="h-100 container">
+            <div class="row h-100 w-100">
+                <div class="col-1 h-100 arrowHello">
+                    <h2 class="arrowTxt arrowTxt1">Projets</h2>
+                    <p class="arrowTxt arrowTxt2">Contact</p>
+                    <img src="{{ asset('img/arrowPink.jpg') }}" alt="" class="arrowImg">
+                </div>
 
+                <div class="col-11" id="homeProjectsProjects">
+                    <canvas id="homeProjectsCanvas" class="w-100 h-100"></canvas>
 
                 </div>
             </div>
         </div>
-
     </section>
 
 {% endblock %}
@@ -160,6 +165,7 @@
     <!-- canvas triangle -->
     <script src="http://127.0.0.1:8000/js/home/meHomeCanvas.js"></script>
     <script src="http://127.0.0.1:8000/js/home/meHomeBtnCircle.js"></script>
+    <script src="http://127.0.0.1:8000/js/home/homeProjectsCanvas.js"></script>
 
 
 
