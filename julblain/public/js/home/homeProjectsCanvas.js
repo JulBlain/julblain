@@ -1,7 +1,7 @@
 var draw3 = {
     vertices :  [],
     t : 1,
-    t2 : 0,// variable to hold how many frames have elapsed in the animation
+    t2 : 0,// hold how many frames have elapsed in the animation
     draw3ed : 0,
     points : "",
     waypoints : [],
@@ -30,22 +30,29 @@ var draw3 = {
         var homeFirstLineX = Math.round(this.canvas.width / 1.5);
         var homeFirstLineY = Math.round(this.canvas.height / 1.5);
 
-        this.vertices.push({
-            x: 0,
-            y: 0
-        });
-        this.vertices.push({
-            x: homeFirstLineX,
-            y: homeFirstLineY
-        });
-        this.vertices.push({
-            x: 0,
-            y: this.canvas.height
-        });
-        this.vertices.push({
-            x: 0,
-            y: 0
-        });
+        if(draw3.canvas.width > draw3.canvas.height) {
+            console.log('width');
+        }
+        else {
+            draw3.vertices.push({
+                x: 0,
+                y: draw3.canvas.height/5
+            });
+            draw3.vertices.push({
+                x: homeFirstLineX,
+                y: homeFirstLineY
+            });
+            draw3.vertices.push({
+                x: 0,
+                y: draw3.canvas.height
+            });
+            draw3.vertices.push({
+                x: 0,
+                y: 0
+            });
+        }
+
+
     },
 
     calcWaypoints : function () {
@@ -118,7 +125,7 @@ var draw3 = {
 
 };
 
-//librairy inView js, draw3 in canvas.js
+//librairy inView js
 $('#homeProjects').on('inview', function (event, isInView) {
     if((isInView) && (draw3.draw3ed === 0 )){
         draw3.init(
@@ -127,4 +134,4 @@ $('#homeProjects').on('inview', function (event, isInView) {
             document.getElementById("homeProjectsCanvas").offsetHeight,
             "#ffc000", 1, "round", "round");
     }
-})
+});

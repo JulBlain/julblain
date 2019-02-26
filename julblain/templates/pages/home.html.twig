@@ -142,9 +142,14 @@
                     <img src="{{ asset('img/arrowPink.jpg') }}" alt="" class="arrowImg">
                 </div>
 
-                <div class="col-11" id="homeProjectsProjects">
-                    <canvas id="homeProjectsCanvas" class="w-100 h-100"></canvas>
-
+                <div class="col-11 h-100" id="homeProjectsProjectsBox">
+                    <!-- <canvas id="homeProjectsCanvas" class="w-100 h-100"></canvas> -->
+                    <div class="homeProjectsSlide">
+                        <div class="homeProjectsImg">
+                            <img src="{{ asset('img/home/test.png') }}" alt="">
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -154,18 +159,17 @@
 
 {% block javascripts %}
 
-    <script src="http://127.0.0.1:8000/js/canvas.js"></script>
+    <script src="http://127.0.0.1:8000/js/home/homeHomeCanvas.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script src="http://127.0.0.1:8000/js/home/arctext.js"></script>
 
     <!-- btn hello home -->
-    <script src="http://127.0.0.1:8000/js/home/hello.js"></script>
+    <script src="http://127.0.0.1:8000/js/home/homeHomeHello.js"></script>
 
     <!-- canvas triangle -->
-    <script src="http://127.0.0.1:8000/js/home/meHomeCanvas.js"></script>
-    <script src="http://127.0.0.1:8000/js/home/meHomeBtnCircle.js"></script>
-    <script src="http://127.0.0.1:8000/js/home/homeProjectsCanvas.js"></script>
+    <script src="http://127.0.0.1:8000/js/home/homeCompetencesCanvas.js"></script>
+    <script src="http://127.0.0.1:8000/js/home/homeCompetencesBtnCircle.js"></script>
+    <!-- <script src="http://127.0.0.1:8000/js/home/homeProjectsCanvas.js"></script> -->
 
 
 

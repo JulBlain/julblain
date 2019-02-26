@@ -118,7 +118,7 @@ var draw2 = {
 
 };
 
-//librairy inView js, draw2 in canvas.js
+//librairy inView js, draw2 in homeHomeCanvas.js
 $('#homeMe').on('inview', function (event, isInView) {
     if((isInView) && (draw2.draw2ed === 0 )){
         draw2.init(
