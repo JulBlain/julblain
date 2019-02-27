@@ -61,34 +61,91 @@ footer {
 
 /*homeProjects*/
 
-#homeProjectsProjectsBox {
-  background-color: red;
+
+
+
+#homeProjectsBox {
   position: relative;
+  padding: $wBorderScreen;
+}
+#homeProjectsBox  img, #homeProjectsColor, .homeProjectsSlide {
+  height: 80%;
+  width: 90%;
+  max-height: 80%;
+  max-width: 90%;
+}
+
+#homeProjectsColor {
+  background-color: red;
+ position: absolute;
+  z-index: 50;
+  transform: translateX(-100%);
   overflow: hidden;
+}
+
+#homeProjectsColor, .homeProjectsSlide {
+  top: $wBorderScreen;
+}
+
+.homeProjectsSlide {
+  display: flex;
+  position: absolute;
+  z-index: 4;
+
+  .homeProjectsLink {
+    margin: auto;
+    display: flex;
+
+    img {
+      margin: auto;
+    }
+  }
+}
+.arrowHello {
+  z-index: 51;
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+@keyframes homeProjectsColor {
+
+}
+
+
+/*
+#homeProjectsProjectsBox {
+  padding: $wBorderScreen;
 
   .homeProjectsSlide {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
+   // top: 0;
+    //left: 0;
     width: 100%;
     height: 100%;
-    background-color: #4e555b;
+    background-color: red;
 
-   transform: translateX(100%);
-    transition: transform 0.3s linear;
+   //transform: translateX(100%);
+    //transition: transform 0.3s linear;
     overflow: hidden;
   }
 }
 
-#homeProjectsProjectsBox:hover .homeProjectsSlide,
-#homeProjectsProjectsBox:hover .homeProjectsImg {
-  transform: translateX(0%);
+ .homeProjectsSlide:hover,
+ .homeProjectsSlide:hover .homeProjectsImg
+ {
+  //transform: translateX(0%);
+  animation: projectsTranslateColor 0.3s linear forwards;
+
+}
+
+.homeProjectsSlide:hover .homeProjectsImg {
+  //animation: projectsTranslateImg 0.3s linear forwards;
 }
 
 #homeProjectsProjectsBox .homeProjectsImg {
   width: 100%;
   height: 100%;
-  transform: translateX(-100%);
+  transform: translateX(100%);
   transition : transform 0.3s linear;
 }
 
@@ -98,9 +155,25 @@ footer {
 }
 
 
+@keyframes projectsTranslateColor {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 
+@keyframes projectsTranslateImg {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
 
-
+*/
 
 
 
