@@ -67,19 +67,27 @@ footer {
 #homeProjectsBox {
   position: relative;
   padding: $wBorderScreen;
+  max-height: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
-#homeProjectsBox  img, #homeProjectsColor, .homeProjectsSlide {
-  height: 80%;
+ #homeProjectsBox img, #homeProjectsColor, .homeProjectsSlide {
+
   width: 90%;
-  max-height: 80%;
+   height: 80%;
   max-width: 90%;
+   max-height: 80%;
 }
+
+
+
 
 #homeProjectsColor {
   background-color: red;
  position: absolute;
   z-index: 50;
-  transform: translateX(-100%);
+  //transform: translateX(100%);
+  animation: homeProjectsColor 1.2s ease-in forwards;
   overflow: hidden;
 }
 
@@ -98,17 +106,71 @@ footer {
 
     img {
       margin: auto;
+      border: 4px solid $blue;
+      opacity: 0;
+      animation: homeProjectsImg 0.6s forwards;
+      animation-delay: 0.6s ;
+
     }
   }
 }
-.arrowHello {
-  z-index: 51;
-  background-color: #FFFFFF;
-  position: relative;
+
+
+#homeProjectsCounter {
+  height: 80vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  div {
+    padding: 5px;
+  }
+}
+
+@keyframes homeProjectsImg {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes homeProjectsColor {
+  /*0% {
+    transform: translateX(150%);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+  70% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(-150%);
+  }*/
 
+  0% {
+    left: 0;
+    right: auto;
+    width: 0.5rem;
+  }
+  50% {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+  51%{
+  left: auto;
+    right: 0;
+    width: 100%;
+  }
+  to {
+    left: auto;
+    right: 0;
+    width: 0;
+  }
 }
 
 
