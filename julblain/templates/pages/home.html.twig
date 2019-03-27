@@ -32,7 +32,7 @@
         </div>
 
         <div id="btnHappy">
-            <div id="btnHappyTxt" > BOUTON de bonne humeur. . .</div>
+            <!-- <div id="btnHappyTxt" > BOUTON de bonne humeur. . .</div> -->
         </div>
     </section>
 
@@ -150,11 +150,21 @@
                             <a class="homeProjectsLink">
                                 <img src="{{ asset('img/home/test1.jpg') }}" alt="">
                             </a>
+                            <a class="homeProjectsLink">
+                                <img src="{{ asset('img/home/test1.jpg') }}" alt="">
+                            </a>
+                            <a class="homeProjectsLink">
+                                <img src="{{ asset('img/home/test1.jpg') }}" alt="">
+                            </a>
                         </div>
                     </div>
 
                     <div id="homeProjectsCounter">
-                        <div>dfd</div>
+                        <div id="homeProjectsCount"></div>
+                        <div id="homeProjectsCounterArrows">
+                            <span><i id="homeProjectsArrowLeft" class="fas fa-caret-left"></i></span>
+                            <span><i id="homeProjectsArrowRight" class="fas fa-caret-right"></i></span>
+                        </div>
                     </div>
 
                 </div>
@@ -171,14 +181,16 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
-    <!-- btn hello home -->
-    <script src="http://127.0.0.1:8000/js/home/homeHomeHello.js"></script>
+    <!-- btn hello home
+    <script src="http://127.0.0.1:8000/js/home/homeHomeHello.js"></script> -->
 
     <!-- canvas triangle -->
     <script src="http://127.0.0.1:8000/js/home/homeCompetencesCanvas.js"></script>
     <script src="http://127.0.0.1:8000/js/home/homeCompetencesBtnCircle.js"></script>
     <!-- <script src="http://127.0.0.1:8000/js/home/homeProjectsCanvas.js"></script> -->
 
+    <!--home projects slider -->
+    <script src="http://127.0.0.1:8000/js/home/homeProjectsSlider.js"></script>
 
 
 

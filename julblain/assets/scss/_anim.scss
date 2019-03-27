@@ -163,3 +163,36 @@
     opacity: 1;
   }
 }
+
+/*homeProjectsSlider*/
+@keyframes homeProjectsImg {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes homeProjectsColor {
+  0% {
+    left: 0;
+    right: auto;
+    width: 0.5rem;
+  }
+  50% {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+  51%{
+    left: auto;
+    right: 0;
+    width: 100%;
+  }
+  to {
+    left: auto;
+    right: 0;
+    width: 0;
+  }
+}
