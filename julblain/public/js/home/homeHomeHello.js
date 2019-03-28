@@ -1,6 +1,4 @@
-
-
-
+/*
 new CircleType(document.getElementById('btnHappyTxt'));
 let truc = document.querySelector('#btnHappyTxt > div');
 
@@ -9,7 +7,7 @@ btnHappy.id = "btnHappyCircle" ;
 truc.appendChild(btnHappy);
 
 
-
+*/
 $('#homeTitle .letters').each(function(){
 
     $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));

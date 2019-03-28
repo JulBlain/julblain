@@ -1,4 +1,5 @@
 var sliderBook = {
+    initCounter : 0,
     imgCount : 0,
     imgCounter : 0,
     divImg : document.getElementsByClassName("homeProjectsLink"),
@@ -82,5 +83,8 @@ $("#homeProjectsArrowLeft").click(function () {
 
 //librairy inView js
 $("#homeProjects").on('inview', function (event, isInView) {
-    sliderBook.init();
+   if(sliderBook.initCounter === 0) {
+       sliderBook.initCounter++;
+       sliderBook.init();
+   }
 });
