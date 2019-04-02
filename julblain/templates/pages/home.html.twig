@@ -172,7 +172,29 @@
             </div>
         </div>
     </section>
-    -->
+
+    <section class="w-100" id="homeContact">
+        {% for message in app.flashes('success') %}
+        <div class="alert alert-success">
+            {{ message }}
+        </div>
+        {% endfor %}
+
+        {{ form_start(form) }}
+        <div class="row">
+            <div class="col">{{ form_row(form.firstname) }}</div>
+            <div class="col">{{ form_row(form.lastname) }}</div>
+            <div class="col">{{ form_row(form.email) }}</div>
+        </div>
+        <div class="row">
+            <div class="col">{{ form_row(form.object) }}</div>
+        </div>
+        {{ form_rest(form) }}
+        <div class="form-group">
+            <button class="btn btn-primary">Envoyer</button>
+        </div>
+        {{ form_end(form) }}
+    </section>
 
 {% endblock %}
 
