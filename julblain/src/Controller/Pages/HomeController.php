@@ -16,7 +16,7 @@ class HomeController extends AbstractController
 
 
     /**
-     * @Route("/accueil", name="home")
+     * @Route("/accueil/", name="home")
      * @param Request $request
      * @param ContactNotification $notification
      * @return Response
@@ -34,7 +34,8 @@ class HomeController extends AbstractController
             $notification->notify($contact);
            $this->addFlash('success', 'Votre message a bien été envoyé.');
 
-            return $this->redirectToRoute('home');
+           /*fragment generate url with anchor */
+            return $this->redirectToRoute('home',['_fragment' => 'homeContact']);
         }
 
         /*return view*/

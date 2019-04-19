@@ -1,5 +1,6 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "var";
+@import "mixin";
 @import "nav";
 @import "home";
 
@@ -57,14 +58,5 @@ footer {
  // margin-top: $heightHeader;
 
 }
-
-
-
-
-
-
-
-
-
 
 @import "anim";

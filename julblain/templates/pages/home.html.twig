@@ -174,27 +174,38 @@
     </section>
 
     <section class="w-100" id="homeContact">
-        {% for message in app.flashes('success') %}
-        <div class="alert alert-success">
-            {{ message }}
-        </div>
-        {% endfor %}
+        <div class="h-100 w-100 container">
+            <div class="row h-100 w-100">
+                <div class="col-1 h-100 arrowHello">
+                    <h2 class="arrowTxt arrowTxt1">Contact</h2>
+                </div>
+                <div class="col-11 h-100">
+                    {% for message in app.flashes('success') %}
+                        <div class="alert alert-success">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
 
-        {{ form_start(form) }}
-        <div class="row">
-            <div class="col">{{ form_row(form.firstname) }}</div>
-            <div class="col">{{ form_row(form.firstname) }}</div>
-            <div class="col">{{ form_row(form.lastname) }}</div>
-            <div class="col">{{ form_row(form.email) }}</div>
+                    {{ form_start(form) }}
+                    <div class="form-group">
+                        <div id="contactFirstname" class="contactRow">{{ form_row(form.firstname) }}</div>
+                        <div id="contactLastname" class="contactRow">{{ form_row(form.lastname) }}</div>
+                        <div id="contactEmail" class="contactRow">{{ form_row(form.email) }}</div>
+                    </div>
+                    <div class="form-group">
+                        <div id="contactObject" class="contactRow">{{ form_row(form.object) }}</div>
+                        <div id="contactMessage" class="contactRow">
+                            {{ form_rest(form) }} <!-- message -->
+                        </div>
+                    </div>
+
+                    <div class="form-group" id="homeContactBtn">
+                        <button type="submit" class=" btn btn-primary">Envoyer</button>
+                    </div>
+                    {{ form_end(form) }}
+                </div>
+            </div>
         </div>
-        <div class="row">
-            <div class="col">{{ form_row(form.object) }}</div>
-        </div>
-        {{ form_rest(form) }}
-        <div class="form-group">
-            <button class="btn btn-primary">Envoyer</button>
-        </div>
-        {{ form_end(form) }}
     </section>
 
 {% endblock %}

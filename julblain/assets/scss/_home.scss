@@ -567,3 +567,68 @@
   box-shadow: 0 0 10px lighten($yellow, 10%);
   background-color: $yellow;
 }
+
+/*homeContact*/
+#homeContact form{
+  padding: 10px ;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: $poiret;
+}
+
+#homeContactBtn {
+  display: flex;
+}
+
+.contactRow>div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.3rem;
+}
+
+.contactRow label {
+  margin-bottom: 0.1rem;
+}
+
+.contactRow input {
+  margin-bottom: 0.2rem;
+}
+
+#homeContact input, #homeContact textarea {
+  font-family: "Times New Roman", sans-serif;
+  padding: 2px;
+}
+
+#homeContact .btn-primary {
+
+  @include btn-border-drawing($lightBlue, $yellow, 4px, bottom, right);
+
+  //=== Button styling, semi-ignore
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font-weight: bold;
+
+  padding: 1em 2em;
+  letter-spacing: 0.05rem;
+
+  &:focus { outline: 2px dotted #55d7dc; }
+}
+
+/*homeContact notification*/
+#homeContact ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+#homeContact li {
+  font-family: $teko;
+  font-size: 1rem;
+  color: $red;
+  line-height: 1;
+  font-style: italic;
+}
