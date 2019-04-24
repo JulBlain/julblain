@@ -4,6 +4,17 @@
 @import "nav";
 @import "home";
 
+//TODO faire cursor là où il faut
+//TODO footer
+// TODO nav
+// TODO responsive
+// TODO
+// TODO
+// TODO
+
+
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -40,7 +51,7 @@ section {
   height: 100vh;
   border : $borderScreen;
   z-index: $ziBorderScreen;
-  top: 100;
+ top: 0;
 }
 
 

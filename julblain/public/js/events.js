@@ -5,3 +5,9 @@ $(document).ready(function(){
         $('body').toggleClass('active');
     });
 });
+
+
+    $('.btn-primary').hover(function(){
+
+        $('.btn-primary').addClass('hover');
+    });

@@ -603,11 +603,10 @@
 }
 
 #homeContact .btn-primary {
-
   @include btn-border-drawing($lightBlue, $yellow, 4px, bottom, right);
 
   //=== Button styling, semi-ignore
-  background: none;
+  background: white;
   border: none;
   cursor: pointer;
   line-height: 1.5;
@@ -618,6 +617,14 @@
 
   &:focus { outline: 2px dotted #55d7dc; }
 }
+
+#homeContactCanvasBox {
+  position: absolute;
+  z-index: -5;
+  padding: 10px;
+}
+
+
 
 /*homeContact notification*/
 #homeContact ul {

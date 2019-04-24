@@ -175,11 +175,15 @@
 
     <section class="w-100" id="homeContact">
         <div class="h-100 w-100 container">
+
             <div class="row h-100 w-100">
                 <div class="col-1 h-100 arrowHello">
                     <h2 class="arrowTxt arrowTxt1">Contact</h2>
                 </div>
                 <div class="col-11 h-100">
+                    <div id="homeContactCanvasBox" class=" h-100 w-100">
+                        <canvas id="homeContactCanvas" class="w-100 h-100"></canvas>
+                    </div>
                     {% for message in app.flashes('success') %}
                         <div class="alert alert-success">
                             {{ message }}
@@ -200,7 +204,7 @@
                     </div>
 
                     <div class="form-group" id="homeContactBtn">
-                        <button type="submit" class=" btn btn-primary">Envoyer</button>
+                        <button type="submit" class=" btn btn-primary" id="homeContactBtnSend">Envoyer</button>
                     </div>
                     {{ form_end(form) }}
                 </div>
@@ -214,6 +218,7 @@
 
     <script src="http://127.0.0.1:8000/js/home/homeHomeCanvas.js"></script>
 
+    {#for moving letters#}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
     <!-- btn hello home  and popper js -->
@@ -222,7 +227,7 @@
     <!-- canvas triangle -->
     <script src="http://127.0.0.1:8000/js/home/homeCompetencesCanvas.js"></script>
     <script src="http://127.0.0.1:8000/js/home/homeCompetencesBtnCircle.js"></script>
-    <!-- <script src="http://127.0.0.1:8000/js/home/homeProjectsCanvas.js"></script> -->
+    <script src="http://127.0.0.1:8000/js/home/homeContactCanvas.js"></script>
 
     <!--home projects slider -->
     <script src="http://127.0.0.1:8000/js/home/homeProjectsSlider.js"></script>
