@@ -56,12 +56,19 @@ section {
 
 
 
-footer {
+.footer {
   position: fixed;
   bottom: 0;
   border-bottom: $borderScreen;
   z-index: $ziFooter;
   width: 100%;
+}
+
+footer {
+  bottom: 0;
+  padding: $wBorderScreen;
+  width: 100%;
+  text-align: right;
 }
 
 #main {
