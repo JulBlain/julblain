@@ -1,18 +1,14 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "var";
 @import "mixin";
-@import "nav";
+@import "header";
 @import "home";
 
 //TODO faire cursor là où il faut
-//TODO footer
-// TODO nav
 // TODO responsive
+// TODO connexion
 // TODO
 // TODO
-// TODO
-
-
 
 
 * {
@@ -38,6 +34,7 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  transition:1s;
 }
 
 section {
@@ -46,15 +43,13 @@ section {
   padding-bottom: $wBorderScreen;
 }
 
-#borderScreen {
+.borderScreen {
   position: fixed ;
   height: 100vh;
   border : $borderScreen;
   z-index: $ziBorderScreen;
  top: 0;
 }
-
-
 
 .footer {
   position: fixed;
@@ -73,8 +68,7 @@ footer {
 
 #main {
   padding: 0 $wBorderScreen; //bootstrap 15
- // margin-top: $heightHeader;
-
 }
+
 
 @import "anim";

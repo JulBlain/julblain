@@ -120,7 +120,6 @@ var drawContact = {
 
 //librairy inView js, drawContact in homeHomeCanvas.js
 $('#homeContact').on('inview', function (event, isInView) {
-    console.log('hhhh');
     if((isInView) && (drawContact.drawContacted === 0 )){
         drawContact.init(
             document.getElementById("homeContactCanvas"),
