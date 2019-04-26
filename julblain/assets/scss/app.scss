@@ -1,13 +1,13 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "var";
 @import "mixin";
-@import "header";
+
 @import "home";
 
 //TODO faire cursor là où il faut
 // TODO responsive
 // TODO connexion
-// TODO
+// TODO mettre les projets
 // TODO
 
 
@@ -70,5 +70,5 @@ footer {
   padding: 0 $wBorderScreen; //bootstrap 15
 }
 
-
+@import "header";
 @import "anim";

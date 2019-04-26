@@ -44,4 +44,13 @@ class HomeController extends AbstractController
         ]));
     }
 
+    /**
+     * @Route("/connexion", name="logging")
+     * @param Request $request
+     * @return Response
+     */
+    public function logging(Request $request): Response {
+
+    }
+
 }
