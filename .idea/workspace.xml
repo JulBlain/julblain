@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="79d8a183-9868-4f7d-8b92-362f6b6388a1" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/julblain/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/julblain/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/julblain/assets/scss/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/julblain/assets/scss/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/julblain/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/julblain/config/packages/framework.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/julblain/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/julblain/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/julblain/src/Controller/Pages/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/julblain/src/Controller/Pages/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/julblain/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/julblain/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/julblain/assets/scss/app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
+            <state relative-caret-position="448">
+              <caret line="73" column="19" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -79,7 +74,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/julblain/templates/admin/login.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="294">
@@ -214,11 +209,11 @@
         <option value="$PROJECT_DIR$/julblain/.env" />
         <option value="$PROJECT_DIR$/julblain/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/julblain/src/Entity/User.php" />
-        <option value="$PROJECT_DIR$/julblain/assets/scss/app.scss" />
         <option value="$PROJECT_DIR$/julblain/src/Controller/Admin/SecurityController.php" />
         <option value="$PROJECT_DIR$/julblain/config/packages/security.yaml" />
         <option value="$PROJECT_DIR$/julblain/config/packages/framework.yaml" />
         <option value="$PROJECT_DIR$/julblain/templates/admin/login.html.twig" />
+        <option value="$PROJECT_DIR$/julblain/assets/scss/app.scss" />
       </list>
     </option>
   </component>
@@ -531,7 +526,7 @@
       <workItem from="1555773016043" duration="429000" />
       <workItem from="1556109423481" duration="14134000" />
       <workItem from="1556198391052" duration="10634000" />
-      <workItem from="1556282629345" duration="10331000" />
+      <workItem from="1556282629345" duration="10813000" />
     </task>
     <task id="LOCAL-00001" summary="config">
       <created>1544542400742</created>
@@ -715,11 +710,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556288800123</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="backend login">
+      <created>1556298928575</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1556298928575</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="376208000" />
+    <option name="totallyTimeSpent" value="376690000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="81" y="31" width="1311" height="1045" extended-state="0" />
@@ -783,7 +785,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="webpack encore" />
     <MESSAGE value="bootstrap" />
     <MESSAGE value="header front" />
     <MESSAGE value="pink arrow home" />
@@ -808,7 +809,8 @@
     <MESSAGE value="desabled session and cookie" />
     <MESSAGE value="do navPublic" />
     <MESSAGE value="bug pink color border, update gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug pink color border, update gitignore" />
+    <MESSAGE value="backend login" />
+    <option name="LAST_COMMIT_MESSAGE" value="backend login" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/common.rnc">
@@ -931,6 +933,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
           <caret line="608" column="19" selection-start-line="608" selection-start-column="19" selection-end-line="608" selection-end-column="19" />
+          <folding>
+            <element signature="e#8129#8293#0" />
+            <element signature="e#8311#8331#0" />
+            <element signature="e#8349#8420#0" />
+            <element signature="e#8440#8468#0" />
+            <element signature="e#8488#8516#0" />
+            <element signature="e#8560#8625#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1062,13 +1072,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/julblain/assets/scss/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/julblain/src/Controller/Admin/SecurityController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1102,6 +1105,13 @@
             <element signature="e#12#26#0#Twig" expanded="true" />
             <element signature="e#171#176#0#Twig" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/julblain/assets/scss/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="73" column="19" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
         </state>
       </provider>
     </entry>
