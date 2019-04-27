@@ -35,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/julblain/assets/scss/app.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="462">
-              <caret line="73" column="16" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
+              <caret line="73" column="14" selection-start-line="73" selection-start-column="14" selection-end-line="73" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -495,7 +495,7 @@
       <workItem from="1556109423481" duration="14134000" />
       <workItem from="1556198391052" duration="10634000" />
       <workItem from="1556282629345" duration="11152000" />
-      <workItem from="1556370303185" duration="2077000" />
+      <workItem from="1556370303185" duration="2103000" />
     </task>
     <task id="LOCAL-00001" summary="config">
       <created>1544542400742</created>
@@ -707,11 +707,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556373163525</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="marges login page">
+      <created>1556373431195</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1556373431195</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="379106000" />
+    <option name="totallyTimeSpent" value="379132000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="81" y="31" width="1311" height="1045" extended-state="0" />
@@ -1068,7 +1075,7 @@
     <entry file="file://$PROJECT_DIR$/julblain/assets/scss/app.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
-          <caret line="73" column="16" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
+          <caret line="73" column="14" selection-start-line="73" selection-start-column="14" selection-end-line="73" selection-end-column="14" />
         </state>
       </provider>
     </entry>
